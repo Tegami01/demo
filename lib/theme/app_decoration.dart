@@ -7,22 +7,19 @@ class AppDecoration {
         color: appTheme.blueGray50,
       );
   static BoxDecoration get fillGray => BoxDecoration(
+        color: appTheme.gray50,
+      );
+  static BoxDecoration get fillGray100 => BoxDecoration(
         color: appTheme.gray100,
       );
   static BoxDecoration get fillGray400 => BoxDecoration(
         color: appTheme.gray400,
       );
-  static BoxDecoration get fillGray5001 => BoxDecoration(
-        color: appTheme.gray5001,
-      );
-  static BoxDecoration get fillRed => BoxDecoration(
-        color: appTheme.red700,
-      );
   static BoxDecoration get fillWhiteA => BoxDecoration(
-        color: appTheme.whiteA700,
+        color: appTheme.whiteA700.withOpacity(0.7),
       );
   static BoxDecoration get fillWhiteA700 => BoxDecoration(
-        color: appTheme.whiteA700.withOpacity(0.7),
+        color: appTheme.whiteA700,
       );
 
   // Gradient decorations
@@ -51,7 +48,7 @@ class AppDecoration {
           begin: Alignment(-0.13, 0.7),
           end: Alignment(1.07, 0.35),
           colors: [
-            appTheme.cyan400.withOpacity(0.07),
+            appTheme.cyan40011,
             appTheme.cyanA4003f,
           ],
         ),
@@ -66,29 +63,10 @@ class AppDecoration {
           ],
         ),
       );
-
-  // Outline decorations
-  static BoxDecoration get outlineBlack => BoxDecoration(
-        color: appTheme.whiteA700,
-        boxShadow: [
-          BoxShadow(
-            color: appTheme.black900.withOpacity(0.25),
-            spreadRadius: 2.h,
-            blurRadius: 2.h,
-            offset: Offset(
-              0,
-              2,
-            ),
-          ),
-        ],
-      );
 }
 
 class BorderRadiusStyle {
   // Circle borders
-  static BorderRadius get circleBorder10 => BorderRadius.circular(
-        10.h,
-      );
   static BorderRadius get circleBorder19 => BorderRadius.circular(
         19.h,
       );
@@ -99,8 +77,8 @@ class BorderRadiusStyle {
       );
 
   // Rounded borders
-  static BorderRadius get roundedBorder25 => BorderRadius.circular(
-        25.h,
+  static BorderRadius get roundedBorder12 => BorderRadius.circular(
+        12.h,
       );
   static BorderRadius get roundedBorder6 => BorderRadius.circular(
         6.h,
