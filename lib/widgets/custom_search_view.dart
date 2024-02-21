@@ -84,7 +84,7 @@ class CustomSearchView extends StatelessWidget {
           controller: controller,
           focusNode: focusNode ?? FocusNode(),
           autofocus: autofocus!,
-          style: textStyle ?? CustomTextStyles.bodyLargeGray600,
+          style: textStyle ?? CustomTextStyles.bodyLargeGray60001,
           keyboardType: textInputType,
           maxLines: maxLines ?? 1,
           decoration: decoration,
@@ -96,7 +96,7 @@ class CustomSearchView extends StatelessWidget {
       );
   InputDecoration get decoration => InputDecoration(
         hintText: hintText ?? "",
-        hintStyle: hintStyle ?? CustomTextStyles.bodyLargeGray600,
+        hintStyle: hintStyle ?? CustomTextStyles.bodyLargeGray60001,
         prefixIcon: prefix ??
             Container(
               margin: EdgeInsets.fromLTRB(10.h, 10.v, 9.h, 10.v),

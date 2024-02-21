@@ -44,12 +44,12 @@ class ThemeHelper {
       visualDensity: VisualDensity.standard,
       colorScheme: colorScheme,
       textTheme: TextThemes.textTheme(colorScheme),
-      scaffoldBackgroundColor: appTheme.gray5001,
+      scaffoldBackgroundColor: appTheme.gray50,
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          backgroundColor: appTheme.gray100,
+          backgroundColor: appTheme.whiteA700.withOpacity(0.7),
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(6.h),
+            borderRadius: BorderRadius.circular(12.h),
           ),
           visualDensity: const VisualDensity(
             vertical: -4,
@@ -59,9 +59,9 @@ class ThemeHelper {
         ),
       ),
       dividerTheme: DividerThemeData(
-        thickness: 41,
-        space: 41,
-        color: appTheme.gray200,
+        thickness: 1,
+        space: 1,
+        color: appTheme.gray300,
       ),
     );
   }
@@ -77,19 +77,19 @@ class ThemeHelper {
 class TextThemes {
   static TextTheme textTheme(ColorScheme colorScheme) => TextTheme(
         bodyLarge: TextStyle(
-          color: appTheme.gray700,
+          color: appTheme.black900,
           fontSize: 16.fSize,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w300,
         ),
         bodyMedium: TextStyle(
           color: appTheme.black900,
-          fontSize: 14.fSize,
+          fontSize: 13.fSize,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.w400,
+          fontWeight: FontWeight.w300,
         ),
         bodySmall: TextStyle(
-          color: appTheme.gray90002,
+          color: appTheme.gray90001,
           fontSize: 12.fSize,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w400,
@@ -137,10 +137,10 @@ class TextThemes {
           fontWeight: FontWeight.w500,
         ),
         titleLarge: TextStyle(
-          color: appTheme.green400,
+          color: appTheme.black900,
           fontSize: 20.fSize,
           fontFamily: 'Roboto',
-          fontWeight: FontWeight.w700,
+          fontWeight: FontWeight.w500,
         ),
         titleMedium: TextStyle(
           color: appTheme.gray700,
@@ -149,8 +149,8 @@ class TextThemes {
           fontWeight: FontWeight.w500,
         ),
         titleSmall: TextStyle(
-          color: appTheme.gray700,
-          fontSize: 14.fSize,
+          color: appTheme.black90001,
+          fontSize: 15.fSize,
           fontFamily: 'Roboto',
           fontWeight: FontWeight.w500,
         ),
@@ -188,28 +188,33 @@ class PrimaryColors {
   Color get blueGray50 => Color(0XFFF1F1F1);
 
   // Cyan
-  Color get cyan400 => Color(0XFF21B9CB);
+  Color get cyan400 => Color(0XFF23BED1);
+  Color get cyan40011 => Color(0X1121B9CB);
   Color get cyan500 => Color(0XFF0FBFD3);
   Color get cyan900 => Color(0XFF01495F);
+  Color get cyanA700 => Color(0XFF04B5CA);
 
   // CyanAf
   Color get cyanA4003f => Color(0X3F00D8F1);
 
   // Gray
-  Color get gray100 => Color(0XFFF4F4F4);
+  Color get gray100 => Color(0XFFF7F7F7);
   Color get gray10001 => Color(0XFFF2F2F2);
-  Color get gray200 => Color(0XFFE7E7E7);
+  Color get gray200 => Color(0XFFF0F0F0);
+  Color get gray20001 => Color(0XFFE7E7E7);
   Color get gray300 => Color(0XFFE6E6E6);
   Color get gray400 => Color(0XFFB2B2B2);
-  Color get gray50 => Color(0XFFF2FBFC);
-  Color get gray5001 => Color(0XFFF8F8F8);
+  Color get gray40059 => Color(0X59BCBCBC);
+  Color get gray50 => Color(0XFFF8F8F8);
+  Color get gray500 => Color(0XFF9EA0A8);
   Color get gray5002 => Color(0XFFF9F9FB);
-  Color get gray600 => Color(0XFF707070);
+  Color get gray600 => Color(0XFF6D6D6D);
+  Color get gray60001 => Color(0XFF7F7F7F);
+  Color get gray60002 => Color(0XFF808089);
   Color get gray700 => Color(0XFF545454);
   Color get gray800 => Color(0XFF3A3A3A);
-  Color get gray900 => Color(0XFF1A1A1A);
-  Color get gray90001 => Color(0XFF252525);
-  Color get gray90002 => Color(0XFF131313);
+  Color get gray900 => Color(0XFF252525);
+  Color get gray90001 => Color(0XFF131313);
 
   // GrayCc
   Color get gray50Cc => Color(0XCCFAFAFA);

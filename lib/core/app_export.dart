@@ -1,6 +1,5 @@
 export 'package:connectivity_plus/connectivity_plus.dart';
 export 'package:flutter_bloc/flutter_bloc.dart';
-export 'package:demo/core/constants/constants.dart';
 export 'package:demo/core/errors/exceptions.dart';
 export 'package:demo/core/network/network_info.dart';
 export 'package:demo/core/utils/image_constant.dart';

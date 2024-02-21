@@ -29,7 +29,7 @@ class AppNavigationScreen extends StatelessWidget {
           child: Scaffold(
             backgroundColor: Color(0XFFFFFFFF),
             body: SizedBox(
-              width: 375.h,
+              width: double.maxFinite,
               child: Column(
                 children: [
                   _buildAppNavigation(context),
@@ -43,21 +43,15 @@ class AppNavigationScreen extends StatelessWidget {
                           children: [
                             _buildScreenTitle(
                               context,
-                              screenTitle: "product_detail - Tab Container".tr,
-                              onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.productDetailTabContainerScreen),
-                            ),
-                            _buildScreenTitle(
-                              context,
                               screenTitle: "Silder_image_product detai".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
                                   AppRoutes.silderImageProductDetaiScreen),
                             ),
                             _buildScreenTitle(
                               context,
-                              screenTitle: "Appbar_navgitionbottom".tr,
+                              screenTitle: "Product-category-ai".tr,
                               onTapScreenTitle: () => onTapScreenTitle(
-                                  AppRoutes.appbarNavgitionbottomScreen),
+                                  AppRoutes.productCategoryAiScreen),
                             ),
                           ],
                         ),

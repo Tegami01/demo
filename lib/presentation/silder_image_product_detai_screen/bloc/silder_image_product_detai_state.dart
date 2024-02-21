@@ -12,6 +12,7 @@ class SilderImageProductDetaiState extends Equatable {
   List<Object?> get props => [
         silderImageProductDetaiModelObj,
       ];
+
   SilderImageProductDetaiState copyWith(
       {SilderImageProductDetaiModel? silderImageProductDetaiModelObj}) {
     return SilderImageProductDetaiState(
